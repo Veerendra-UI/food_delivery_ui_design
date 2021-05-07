@@ -1,0 +1,2280 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/material/tab_controller.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/icons.dart', 'packages/flutter_app/animation/ScaleRoute.dart', 'packages/flutter_app/pages/FoodOrderPage.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/material/card.dart', 'packages/flutter/src/painting/rounded_rectangle_border.dart', 'packages/flutter/src/painting/border_radius.dart', 'packages/flutter/src/widgets/preferred_size.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/painting/box_decoration.dart', 'packages/flutter/src/painting/box_border.dart'], (function load__packages__flutter_app__pages__FoodDetailsPage_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__material__tab_controller$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__icons$46dart, packages__flutter_app__animation__ScaleRoute$46dart, packages__flutter_app__pages__FoodOrderPage$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__material__card$46dart, packages__flutter__src__painting__rounded_rectangle_border$46dart, packages__flutter__src__painting__border_radius$46dart, packages__flutter__src__widgets__preferred_size$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__painting__box_decoration$46dart, packages__flutter__src__painting__box_border$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const tab_controller = packages__flutter__src__material__tab_controller$46dart.src__material__tab_controller;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const icon_button = packages__flutter__src__material__icon_button$46dart.src__material__icon_button;
+  const tabs = packages__flutter__src__material__icon_button$46dart.src__material__tabs;
+  const ink_well = packages__flutter__src__material__icon_button$46dart.src__material__ink_well;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const ScaleRoute = packages__flutter_app__animation__ScaleRoute$46dart.animation__ScaleRoute;
+  const FoodOrderPage = packages__flutter_app__pages__FoodOrderPage$46dart.pages__FoodOrderPage;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const card = packages__flutter__src__material__card$46dart.src__material__card;
+  const rounded_rectangle_border = packages__flutter__src__painting__rounded_rectangle_border$46dart.src__painting__rounded_rectangle_border;
+  const border_radius = packages__flutter__src__painting__border_radius$46dart.src__painting__border_radius;
+  const preferred_size = packages__flutter__src__widgets__preferred_size$46dart.src__widgets__preferred_size;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const box_decoration = packages__flutter__src__painting__box_decoration$46dart.src__painting__box_decoration;
+  const box_border = packages__flutter__src__painting__box_border$46dart.src__painting__box_border;
+  var FoodDetailsPage = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    ObjectL: () => (T.ObjectL = dart.constFn(dart.legacy(core.Object)))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 21,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 15,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 13,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 13,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([C[6] || CT.C6, C[7] || CT.C7], T._LocationL());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 21,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 25,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 19,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.constList([C[10] || CT.C10, C[11] || CT.C11], T._LocationL());
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C13() {
+      return C[13] = dart.constList([], T._LocationL());
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 60,
+        [_Location_line]: 36,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 17,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 17,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16, C[17] || CT.C17], T._LocationL());
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 11,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "elevation",
+        [_Location_column]: 11,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 11,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "brightness",
+        [_Location_column]: 11,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "actions",
+        [_Location_column]: 11,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20, C[21] || CT.C21, C[22] || CT.C22, C[23] || CT.C23, C[24] || CT.C24], T._LocationL());
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 18,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "name",
+        [_Location_column]: 64,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.constList([C[27] || CT.C27], T._LocationL());
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[26] || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 51,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "semanticContainer",
+        [_Location_column]: 17,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "clipBehavior",
+        [_Location_column]: 17,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "shape",
+        [_Location_column]: 17,
+        [_Location_line]: 54,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "elevation",
+        [_Location_column]: 17,
+        [_Location_line]: 57,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 17,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30, C[31] || CT.C31, C[32] || CT.C32, C[33] || CT.C33, C[34] || CT.C34, C[35] || CT.C35], T._LocationL());
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 48,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "productName",
+        [_Location_column]: 19,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "productPrice",
+        [_Location_column]: 19,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "productHost",
+        [_Location_column]: 19,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.constList([C[38] || CT.C38, C[39] || CT.C39, C[40] || CT.C40], T._LocationL());
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[37] || CT.C37,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 68,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 17,
+        [_Location_line]: 73,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43], T._LocationL());
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 72,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 75,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 17,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.constList([C[47] || CT.C47], T._LocationL());
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[46] || CT.C46,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 76,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "text",
+        [_Location_column]: 23,
+        [_Location_line]: 91,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.constList([C[50] || CT.C50], T._LocationL());
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[49] || CT.C49,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 90,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "text",
+        [_Location_column]: 23,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.constList([C[53] || CT.C53], T._LocationL());
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[52] || CT.C52,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 93,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "labelColor",
+        [_Location_column]: 19,
+        [_Location_line]: 82,
+        [_Location_file]: null
+      });
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "indicatorColor",
+        [_Location_column]: 19,
+        [_Location_line]: 83,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "unselectedLabelColor",
+        [_Location_column]: 19,
+        [_Location_line]: 84,
+        [_Location_file]: null
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "indicatorSize",
+        [_Location_column]: 19,
+        [_Location_line]: 85,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "labelStyle",
+        [_Location_column]: 19,
+        [_Location_line]: 86,
+        [_Location_file]: null
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "tabs",
+        [_Location_column]: 19,
+        [_Location_line]: 89,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.constList([C[56] || CT.C56, C[57] || CT.C57, C[58] || CT.C58, C[59] || CT.C59, C[60] || CT.C60, C[61] || CT.C61], T._LocationL());
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[55] || CT.C55,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 81,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "preferredSize",
+        [_Location_column]: 17,
+        [_Location_line]: 80,
+        [_Location_file]: null
+      });
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 81,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C[63] = dart.constList([C[64] || CT.C64, C[65] || CT.C65], T._LocationL());
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[63] || CT.C63,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 79,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 105,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C69() {
+      return C[69] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 23,
+        [_Location_line]: 104,
+        [_Location_file]: null
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 105,
+        [_Location_file]: null
+      });
+    },
+    get C68() {
+      return C[68] = dart.constList([C[69] || CT.C69, C[70] || CT.C70], T._LocationL());
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[68] || CT.C68,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 103,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 109,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 23,
+        [_Location_line]: 108,
+        [_Location_file]: null
+      });
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 109,
+        [_Location_file]: null
+      });
+    },
+    get C73() {
+      return C[73] = dart.constList([C[74] || CT.C74, C[75] || CT.C75], T._LocationL());
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[73] || CT.C73,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 107,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 19,
+        [_Location_line]: 102,
+        [_Location_file]: null
+      });
+    },
+    get C77() {
+      return C[77] = dart.constList([C[78] || CT.C78], T._LocationL());
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[77] || CT.C77,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 101,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C81() {
+      return C[81] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 17,
+        [_Location_line]: 100,
+        [_Location_file]: null
+      });
+    },
+    get C82() {
+      return C[82] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 101,
+        [_Location_file]: null
+      });
+    },
+    get C80() {
+      return C[80] = dart.constList([C[81] || CT.C81, C[82] || CT.C82], T._LocationL());
+    },
+    get C79() {
+      return C[79] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[80] || CT.C80,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 99,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 114,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C86() {
+      return C[86] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 13,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C85() {
+      return C[85] = dart.constList([C[86] || CT.C86, C[87] || CT.C87], T._LocationL());
+    },
+    get C84() {
+      return C[84] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[85] || CT.C85,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 45,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 11,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C91() {
+      return C[91] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C89() {
+      return C[89] = dart.constList([C[90] || CT.C90, C[91] || CT.C91], T._LocationL());
+    },
+    get C88() {
+      return C[88] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[89] || CT.C89,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 40,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 9,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C95() {
+      return C[95] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 9,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C96() {
+      return C[96] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 9,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C93() {
+      return C[93] = dart.constList([C[94] || CT.C94, C[95] || CT.C95, C[96] || CT.C96], T._LocationL());
+    },
+    get C92() {
+      return C[92] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[93] || CT.C93,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 16,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C99() {
+      return C[99] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "length",
+        [_Location_column]: 7,
+        [_Location_line]: 15,
+        [_Location_file]: null
+      });
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C98() {
+      return C[98] = dart.constList([C[99] || CT.C99, C[100] || CT.C100], T._LocationL());
+    },
+    get C97() {
+      return C[97] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[98] || CT.C98,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 14,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C103() {
+      return C[103] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 15,
+        [_Location_line]: 143,
+        [_Location_file]: null
+      });
+    },
+    get C104() {
+      return C[104] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 144,
+        [_Location_file]: null
+      });
+    },
+    get C102() {
+      return C[102] = dart.constList([C[103] || CT.C103, C[104] || CT.C104], T._LocationL());
+    },
+    get C101() {
+      return C[101] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[102] || CT.C102,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 142,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C107() {
+      return C[107] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 15,
+        [_Location_line]: 150,
+        [_Location_file]: null
+      });
+    },
+    get C108() {
+      return C[108] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 151,
+        [_Location_file]: null
+      });
+    },
+    get C106() {
+      return C[106] = dart.constList([C[107] || CT.C107, C[108] || CT.C108], T._LocationL());
+    },
+    get C105() {
+      return C[105] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[106] || CT.C106,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 149,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C111() {
+      return C[111] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 11,
+        [_Location_line]: 140,
+        [_Location_file]: null
+      });
+    },
+    get C112() {
+      return C[112] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 141,
+        [_Location_file]: null
+      });
+    },
+    get C110() {
+      return C[110] = dart.constList([C[111] || CT.C111, C[112] || CT.C112], T._LocationL());
+    },
+    get C109() {
+      return C[109] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[110] || CT.C110,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 139,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C115() {
+      return C[115] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 11,
+        [_Location_line]: 159,
+        [_Location_file]: null
+      });
+    },
+    get C114() {
+      return C[114] = dart.constList([C[115] || CT.C115], T._LocationL());
+    },
+    get C113() {
+      return C[113] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[114] || CT.C114,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 158,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C118() {
+      return C[118] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 15,
+        [_Location_line]: 164,
+        [_Location_file]: null
+      });
+    },
+    get C119() {
+      return C[119] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 165,
+        [_Location_file]: null
+      });
+    },
+    get C117() {
+      return C[117] = dart.constList([C[118] || CT.C118, C[119] || CT.C119], T._LocationL());
+    },
+    get C116() {
+      return C[116] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[117] || CT.C117,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 163,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C122() {
+      return C[122] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 15,
+        [_Location_line]: 171,
+        [_Location_file]: null
+      });
+    },
+    get C123() {
+      return C[123] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 172,
+        [_Location_file]: null
+      });
+    },
+    get C121() {
+      return C[121] = dart.constList([C[122] || CT.C122, C[123] || CT.C123], T._LocationL());
+    },
+    get C120() {
+      return C[120] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[121] || CT.C121,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 170,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C126() {
+      return C[126] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 162,
+        [_Location_file]: null
+      });
+    },
+    get C125() {
+      return C[125] = dart.constList([C[126] || CT.C126], T._LocationL());
+    },
+    get C124() {
+      return C[124] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[125] || CT.C125,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 161,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C129() {
+      return C[129] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 7,
+        [_Location_line]: 138,
+        [_Location_file]: null
+      });
+    },
+    get C128() {
+      return C[128] = dart.constList([C[129] || CT.C129], T._LocationL());
+    },
+    get C127() {
+      return C[127] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[128] || CT.C128,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 137,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C132() {
+      return C[132] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 23,
+        [_Location_line]: 195,
+        [_Location_file]: null
+      });
+    },
+    get C133() {
+      return C[133] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 17,
+        [_Location_line]: 196,
+        [_Location_file]: null
+      });
+    },
+    get C134() {
+      return C[134] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "size",
+        [_Location_column]: 17,
+        [_Location_line]: 197,
+        [_Location_file]: null
+      });
+    },
+    get C131() {
+      return C[131] = dart.constList([C[132] || CT.C132, C[133] || CT.C133, C[134] || CT.C134], T._LocationL());
+    },
+    get C130() {
+      return C[130] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[131] || CT.C131,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 194,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C137() {
+      return C[137] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 17,
+        [_Location_line]: 200,
+        [_Location_file]: null
+      });
+    },
+    get C136() {
+      return C[136] = dart.constList([C[137] || CT.C137], T._LocationL());
+    },
+    get C135() {
+      return C[135] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[136] || CT.C136,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 199,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C140() {
+      return C[140] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 17,
+        [_Location_line]: 203,
+        [_Location_file]: null
+      });
+    },
+    get C141() {
+      return C[141] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 17,
+        [_Location_line]: 204,
+        [_Location_file]: null
+      });
+    },
+    get C139() {
+      return C[139] = dart.constList([C[140] || CT.C140, C[141] || CT.C141], T._LocationL());
+    },
+    get C138() {
+      return C[138] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[139] || CT.C139,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 202,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C144() {
+      return C[144] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 193,
+        [_Location_file]: null
+      });
+    },
+    get C143() {
+      return C[143] = dart.constList([C[144] || CT.C144], T._LocationL());
+    },
+    get C142() {
+      return C[142] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[143] || CT.C143,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 192,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C147() {
+      return C[147] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 23,
+        [_Location_line]: 214,
+        [_Location_file]: null
+      });
+    },
+    get C148() {
+      return C[148] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 17,
+        [_Location_line]: 215,
+        [_Location_file]: null
+      });
+    },
+    get C149() {
+      return C[149] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "size",
+        [_Location_column]: 17,
+        [_Location_line]: 216,
+        [_Location_file]: null
+      });
+    },
+    get C146() {
+      return C[146] = dart.constList([C[147] || CT.C147, C[148] || CT.C148, C[149] || CT.C149], T._LocationL());
+    },
+    get C145() {
+      return C[145] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[146] || CT.C146,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 213,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C152() {
+      return C[152] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 17,
+        [_Location_line]: 219,
+        [_Location_file]: null
+      });
+    },
+    get C151() {
+      return C[151] = dart.constList([C[152] || CT.C152], T._LocationL());
+    },
+    get C150() {
+      return C[150] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[151] || CT.C151,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 218,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C155() {
+      return C[155] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 17,
+        [_Location_line]: 222,
+        [_Location_file]: null
+      });
+    },
+    get C156() {
+      return C[156] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 17,
+        [_Location_line]: 223,
+        [_Location_file]: null
+      });
+    },
+    get C154() {
+      return C[154] = dart.constList([C[155] || CT.C155, C[156] || CT.C156], T._LocationL());
+    },
+    get C153() {
+      return C[153] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[154] || CT.C154,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 221,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C159() {
+      return C[159] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 212,
+        [_Location_file]: null
+      });
+    },
+    get C158() {
+      return C[158] = dart.constList([C[159] || CT.C159], T._LocationL());
+    },
+    get C157() {
+      return C[157] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[158] || CT.C158,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 211,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C162() {
+      return C[162] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 23,
+        [_Location_line]: 233,
+        [_Location_file]: null
+      });
+    },
+    get C163() {
+      return C[163] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 17,
+        [_Location_line]: 234,
+        [_Location_file]: null
+      });
+    },
+    get C164() {
+      return C[164] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "size",
+        [_Location_column]: 17,
+        [_Location_line]: 235,
+        [_Location_file]: null
+      });
+    },
+    get C161() {
+      return C[161] = dart.constList([C[162] || CT.C162, C[163] || CT.C163, C[164] || CT.C164], T._LocationL());
+    },
+    get C160() {
+      return C[160] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[161] || CT.C161,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 232,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C167() {
+      return C[167] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 17,
+        [_Location_line]: 238,
+        [_Location_file]: null
+      });
+    },
+    get C166() {
+      return C[166] = dart.constList([C[167] || CT.C167], T._LocationL());
+    },
+    get C165() {
+      return C[165] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[166] || CT.C166,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 237,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C170() {
+      return C[170] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 17,
+        [_Location_line]: 241,
+        [_Location_file]: null
+      });
+    },
+    get C171() {
+      return C[171] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 17,
+        [_Location_line]: 242,
+        [_Location_file]: null
+      });
+    },
+    get C169() {
+      return C[169] = dart.constList([C[170] || CT.C170, C[171] || CT.C171], T._LocationL());
+    },
+    get C168() {
+      return C[168] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[169] || CT.C169,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 240,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C174() {
+      return C[174] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 231,
+        [_Location_file]: null
+      });
+    },
+    get C173() {
+      return C[173] = dart.constList([C[174] || CT.C174], T._LocationL());
+    },
+    get C172() {
+      return C[172] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[173] || CT.C173,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 230,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C177() {
+      return C[177] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 23,
+        [_Location_line]: 252,
+        [_Location_file]: null
+      });
+    },
+    get C178() {
+      return C[178] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 17,
+        [_Location_line]: 253,
+        [_Location_file]: null
+      });
+    },
+    get C179() {
+      return C[179] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "size",
+        [_Location_column]: 17,
+        [_Location_line]: 254,
+        [_Location_file]: null
+      });
+    },
+    get C176() {
+      return C[176] = dart.constList([C[177] || CT.C177, C[178] || CT.C178, C[179] || CT.C179], T._LocationL());
+    },
+    get C175() {
+      return C[175] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[176] || CT.C176,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 251,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C182() {
+      return C[182] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 17,
+        [_Location_line]: 257,
+        [_Location_file]: null
+      });
+    },
+    get C181() {
+      return C[181] = dart.constList([C[182] || CT.C182], T._LocationL());
+    },
+    get C180() {
+      return C[180] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[181] || CT.C181,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 256,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C185() {
+      return C[185] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 17,
+        [_Location_line]: 260,
+        [_Location_file]: null
+      });
+    },
+    get C186() {
+      return C[186] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 17,
+        [_Location_line]: 261,
+        [_Location_file]: null
+      });
+    },
+    get C184() {
+      return C[184] = dart.constList([C[185] || CT.C185, C[186] || CT.C186], T._LocationL());
+    },
+    get C183() {
+      return C[183] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[184] || CT.C184,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 259,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C189() {
+      return C[189] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 250,
+        [_Location_file]: null
+      });
+    },
+    get C188() {
+      return C[188] = dart.constList([C[189] || CT.C189], T._LocationL());
+    },
+    get C187() {
+      return C[187] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[188] || CT.C188,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 249,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C192() {
+      return C[192] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 9,
+        [_Location_line]: 190,
+        [_Location_file]: null
+      });
+    },
+    get C193() {
+      return C[193] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 191,
+        [_Location_file]: null
+      });
+    },
+    get C191() {
+      return C[191] = dart.constList([C[192] || CT.C192, C[193] || CT.C193], T._LocationL());
+    },
+    get C190() {
+      return C[190] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[191] || CT.C191,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 189,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C196() {
+      return C[196] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 7,
+        [_Location_line]: 188,
+        [_Location_file]: null
+      });
+    },
+    get C197() {
+      return C[197] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 189,
+        [_Location_file]: null
+      });
+    },
+    get C195() {
+      return C[195] = dart.constList([C[196] || CT.C196, C[197] || CT.C197], T._LocationL());
+    },
+    get C194() {
+      return C[194] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[195] || CT.C195,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 187,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C200() {
+      return C[200] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 30,
+        [_Location_line]: 283,
+        [_Location_file]: null
+      });
+    },
+    get C199() {
+      return C[199] = dart.constList([C[200] || CT.C200], T._LocationL());
+    },
+    get C198() {
+      return C[198] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[199] || CT.C199,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 283,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C203() {
+      return C[203] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 13,
+        [_Location_line]: 282,
+        [_Location_file]: null
+      });
+    },
+    get C204() {
+      return C[204] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 13,
+        [_Location_line]: 283,
+        [_Location_file]: null
+      });
+    },
+    get C205() {
+      return C[205] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 13,
+        [_Location_line]: 284,
+        [_Location_file]: null
+      });
+    },
+    get C206() {
+      return C[206] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "iconSize",
+        [_Location_column]: 13,
+        [_Location_line]: 285,
+        [_Location_file]: null
+      });
+    },
+    get C202() {
+      return C[202] = dart.constList([C[203] || CT.C203, C[204] || CT.C204, C[205] || CT.C205, C[206] || CT.C206], T._LocationL());
+    },
+    get C201() {
+      return C[201] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[202] || CT.C202,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 281,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C207() {
+      return C[207] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 56,
+        [_Location_line]: 289,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C210() {
+      return C[210] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 19,
+        [_Location_line]: 301,
+        [_Location_file]: null
+      });
+    },
+    get C211() {
+      return C[211] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 19,
+        [_Location_line]: 302,
+        [_Location_file]: null
+      });
+    },
+    get C209() {
+      return C[209] = dart.constList([C[210] || CT.C210, C[211] || CT.C211], T._LocationL());
+    },
+    get C208() {
+      return C[208] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[209] || CT.C209,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 300,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C214() {
+      return C[214] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 300,
+        [_Location_file]: null
+      });
+    },
+    get C213() {
+      return C[213] = dart.constList([C[214] || CT.C214], T._LocationL());
+    },
+    get C212() {
+      return C[212] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[213] || CT.C213,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 299,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C217() {
+      return C[217] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 15,
+        [_Location_line]: 292,
+        [_Location_file]: null
+      });
+    },
+    get C218() {
+      return C[218] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 15,
+        [_Location_line]: 293,
+        [_Location_file]: null
+      });
+    },
+    get C219() {
+      return C[219] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 15,
+        [_Location_line]: 294,
+        [_Location_file]: null
+      });
+    },
+    get C220() {
+      return C[220] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 299,
+        [_Location_file]: null
+      });
+    },
+    get C216() {
+      return C[216] = dart.constList([C[217] || CT.C217, C[218] || CT.C218, C[219] || CT.C219, C[220] || CT.C220], T._LocationL());
+    },
+    get C215() {
+      return C[215] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[216] || CT.C216,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 291,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C223() {
+      return C[223] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 13,
+        [_Location_line]: 288,
+        [_Location_file]: null
+      });
+    },
+    get C224() {
+      return C[224] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 291,
+        [_Location_file]: null
+      });
+    },
+    get C222() {
+      return C[222] = dart.constList([C[223] || CT.C223, C[224] || CT.C224], T._LocationL());
+    },
+    get C221() {
+      return C[221] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[222] || CT.C222,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 287,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C227() {
+      return C[227] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 30,
+        [_Location_line]: 312,
+        [_Location_file]: null
+      });
+    },
+    get C226() {
+      return C[226] = dart.constList([C[227] || CT.C227], T._LocationL());
+    },
+    get C225() {
+      return C[225] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[226] || CT.C226,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 312,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C230() {
+      return C[230] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 13,
+        [_Location_line]: 311,
+        [_Location_file]: null
+      });
+    },
+    get C231() {
+      return C[231] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 13,
+        [_Location_line]: 312,
+        [_Location_file]: null
+      });
+    },
+    get C232() {
+      return C[232] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 13,
+        [_Location_line]: 313,
+        [_Location_file]: null
+      });
+    },
+    get C233() {
+      return C[233] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "iconSize",
+        [_Location_column]: 13,
+        [_Location_line]: 314,
+        [_Location_file]: null
+      });
+    },
+    get C229() {
+      return C[229] = dart.constList([C[230] || CT.C230, C[231] || CT.C231, C[232] || CT.C232, C[233] || CT.C233], T._LocationL());
+    },
+    get C228() {
+      return C[228] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[229] || CT.C229,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 310,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C236() {
+      return C[236] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 9,
+        [_Location_line]: 279,
+        [_Location_file]: null
+      });
+    },
+    get C237() {
+      return C[237] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 280,
+        [_Location_file]: null
+      });
+    },
+    get C235() {
+      return C[235] = dart.constList([C[236] || CT.C236, C[237] || CT.C237], T._LocationL());
+    },
+    get C234() {
+      return C[234] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[235] || CT.C235,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 278,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C240() {
+      return C[240] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 278,
+        [_Location_file]: null
+      });
+    },
+    get C239() {
+      return C[239] = dart.constList([C[240] || CT.C240], T._LocationL());
+    },
+    get C238() {
+      return C[238] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[239] || CT.C239,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 277,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C243() {
+      return C[243] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 9,
+        [_Location_line]: 327,
+        [_Location_file]: null
+      });
+    },
+    get C244() {
+      return C[244] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 9,
+        [_Location_line]: 328,
+        [_Location_file]: null
+      });
+    },
+    get C245() {
+      return C[245] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "textAlign",
+        [_Location_column]: 9,
+        [_Location_line]: 333,
+        [_Location_file]: null
+      });
+    },
+    get C242() {
+      return C[242] = dart.constList([C[243] || CT.C243, C[244] || CT.C244, C[245] || CT.C245], T._LocationL());
+    },
+    get C241() {
+      return C[241] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[242] || CT.C242,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 326,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    },
+    get C248() {
+      return C[248] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 326,
+        [_Location_file]: null
+      });
+    },
+    get C247() {
+      return C[247] = dart.constList([C[248] || CT.C248], T._LocationL());
+    },
+    get C246() {
+      return C[246] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[247] || CT.C247,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 325,
+        [_Location_file]: "file:///C:/Users/veerendra%20h/Desktop/images/flutter-food-delivery-app-ui/lib/pages/FoodDetailsPage.dart"
+      });
+    }
+  }, false);
+  var C = Array(249).fill(void 0);
+  var I = ["package:flutter_app/pages/FoodDetailsPage.dart"];
+  FoodDetailsPage.FoodDetailsPage = class FoodDetailsPage$ extends framework.StatefulWidget {
+    createState() {
+      return new FoodDetailsPage._FoodDetailsPageState.new();
+    }
+  };
+  (FoodDetailsPage.FoodDetailsPage.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    FoodDetailsPage.FoodDetailsPage.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = FoodDetailsPage.FoodDetailsPage.prototype;
+  dart.addTypeTests(FoodDetailsPage.FoodDetailsPage);
+  dart.addTypeCaches(FoodDetailsPage.FoodDetailsPage);
+  dart.setMethodSignature(FoodDetailsPage.FoodDetailsPage, () => ({
+    __proto__: dart.getMethods(FoodDetailsPage.FoodDetailsPage.__proto__),
+    createState: dart.fnType(dart.legacy(FoodDetailsPage._FoodDetailsPageState), [])
+  }));
+  dart.setLibraryUri(FoodDetailsPage.FoodDetailsPage, I[0]);
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  FoodDetailsPage._FoodDetailsPageState = class _FoodDetailsPageState extends framework.State$(dart.legacy(FoodDetailsPage.FoodDetailsPage)) {
+    build(context) {
+      return new tab_controller.DefaultTabController.new({length: 2, child: new scaffold.Scaffold.new({backgroundColor: colors.Colors.white, appBar: new app_bar.AppBar.new({backgroundColor: new ui.Color.new(4294638330), elevation: 0.0, leading: new icon_button.IconButton.new({icon: new icon.Icon.new(icons.Icons.arrow_back_ios, {color: new ui.Color.new(4282005303), $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), onPressed: dart.fn(() => navigator.Navigator.of(context).pop(T.ObjectL()), T.VoidTovoid()), $creationLocationd_0dea112b090073317d4: C[4] || CT.C4}), brightness: ui.Brightness.light, actions: T.JSArrayOfWidgetL().of([new icon_button.IconButton.new({icon: new icon.Icon.new(icons.Icons.business_center, {color: new ui.Color.new(4282005303), $creationLocationd_0dea112b090073317d4: C[8] || CT.C8}), onPressed: dart.fn(() => {
+                  navigator.Navigator.push(dart.dynamic, context, new ScaleRoute.ScaleRoute.new({page: new FoodOrderPage.FoodOrderPage.new({$creationLocationd_0dea112b090073317d4: C[12] || CT.C12})}));
+                }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[14] || CT.C14})]), $creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), body: new container.Container.new({padding: new edge_insets.EdgeInsets.only({left: 15.0, right: 15.0}), child: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.spaceEvenly, children: T.JSArrayOfWidgetL().of([new card.Card.new({semanticContainer: true, clipBehavior: ui.Clip.antiAliasWithSaveLayer, child: new image.Image.asset("assets/images/bestfood/" + "ic_best_food_8" + ".jpeg", {$creationLocationd_0dea112b090073317d4: C[25] || CT.C25}), shape: new rounded_rectangle_border.RoundedRectangleBorder.new({borderRadius: new border_radius.BorderRadius.circular(3.0)}), elevation: 1.0, margin: new edge_insets.EdgeInsets.all(5.0), $creationLocationd_0dea112b090073317d4: C[28] || CT.C28}), new FoodDetailsPage.FoodTitleWidget.new({productName: "Grilled Salmon", productPrice: "$96.00", productHost: "pizza hut", $creationLocationd_0dea112b090073317d4: C[36] || CT.C36}), new basic.SizedBox.new({height: 15.0, $creationLocationd_0dea112b090073317d4: C[41] || CT.C41}), new FoodDetailsPage.AddToCartMenu.new({$creationLocationd_0dea112b090073317d4: C[44] || CT.C44}), new basic.SizedBox.new({height: 15.0, $creationLocationd_0dea112b090073317d4: C[45] || CT.C45}), new preferred_size.PreferredSize.new({preferredSize: new ui.Size.fromHeight(50.0), child: new tabs.TabBar.new({labelColor: new ui.Color.new(4294786880), indicatorColor: new ui.Color.new(4294786880), unselectedLabelColor: new ui.Color.new(4288979361), indicatorSize: tabs.TabBarIndicatorSize.label, labelStyle: new text_style.TextStyle.new({fontWeight: ui.FontWeight.w500}), tabs: T.JSArrayOfWidgetL().of([new tabs.Tab.new({text: "Food Details", $creationLocationd_0dea112b090073317d4: C[48] || CT.C48}), new tabs.Tab.new({text: "Food Reviews", $creationLocationd_0dea112b090073317d4: C[51] || CT.C51})]), $creationLocationd_0dea112b090073317d4: C[54] || CT.C54}), $creationLocationd_0dea112b090073317d4: C[62] || CT.C62}), new container.Container.new({height: 150.0, child: new tabs.TabBarView.new({children: T.JSArrayOfWidgetL().of([new container.Container.new({color: colors.Colors.white24, child: new FoodDetailsPage.DetailContentMenu.new({$creationLocationd_0dea112b090073317d4: C[66] || CT.C66}), $creationLocationd_0dea112b090073317d4: C[67] || CT.C67}), new container.Container.new({color: colors.Colors.white24, child: new FoodDetailsPage.DetailContentMenu.new({$creationLocationd_0dea112b090073317d4: C[71] || CT.C71}), $creationLocationd_0dea112b090073317d4: C[72] || CT.C72})]), $creationLocationd_0dea112b090073317d4: C[76] || CT.C76}), $creationLocationd_0dea112b090073317d4: C[79] || CT.C79}), new FoodDetailsPage.BottomMenu.new({$creationLocationd_0dea112b090073317d4: C[83] || CT.C83})]), $creationLocationd_0dea112b090073317d4: C[84] || CT.C84}), $creationLocationd_0dea112b090073317d4: C[88] || CT.C88}), $creationLocationd_0dea112b090073317d4: C[92] || CT.C92}), $creationLocationd_0dea112b090073317d4: C[97] || CT.C97});
+    }
+  };
+  (FoodDetailsPage._FoodDetailsPageState.new = function() {
+    FoodDetailsPage._FoodDetailsPageState.__proto__.new.call(this);
+    ;
+  }).prototype = FoodDetailsPage._FoodDetailsPageState.prototype;
+  dart.addTypeTests(FoodDetailsPage._FoodDetailsPageState);
+  dart.addTypeCaches(FoodDetailsPage._FoodDetailsPageState);
+  dart.setMethodSignature(FoodDetailsPage._FoodDetailsPageState, () => ({
+    __proto__: dart.getMethods(FoodDetailsPage._FoodDetailsPageState.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(FoodDetailsPage._FoodDetailsPageState, I[0]);
+  var productName$ = dart.privateName(FoodDetailsPage, "FoodTitleWidget.productName");
+  var productPrice$ = dart.privateName(FoodDetailsPage, "FoodTitleWidget.productPrice");
+  var productHost$ = dart.privateName(FoodDetailsPage, "FoodTitleWidget.productHost");
+  FoodDetailsPage.FoodTitleWidget = class FoodTitleWidget extends framework.StatelessWidget {
+    get productName() {
+      return this[productName$];
+    }
+    set productName(value) {
+      this[productName$] = value;
+    }
+    get productPrice() {
+      return this[productPrice$];
+    }
+    set productPrice(value) {
+      this[productPrice$] = value;
+    }
+    get productHost() {
+      return this[productHost$];
+    }
+    set productHost(value) {
+      this[productHost$] = value;
+    }
+    build(context) {
+      return new basic.Column.new({children: T.JSArrayOfWidgetL().of([new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.spaceBetween, children: T.JSArrayOfWidgetL().of([new text.Text.new(this.productName, {style: new text_style.TextStyle.new({fontSize: 20.0, color: new ui.Color.new(4282006075), fontWeight: ui.FontWeight.w500}), $creationLocationd_0dea112b090073317d4: C[101] || CT.C101}), new text.Text.new(this.productPrice, {style: new text_style.TextStyle.new({fontSize: 20.0, color: new ui.Color.new(4282006075), fontWeight: ui.FontWeight.w500}), $creationLocationd_0dea112b090073317d4: C[105] || CT.C105})]), $creationLocationd_0dea112b090073317d4: C[109] || CT.C109}), new basic.SizedBox.new({height: 5.0, $creationLocationd_0dea112b090073317d4: C[113] || CT.C113}), new basic.Row.new({children: T.JSArrayOfWidgetL().of([new text.Text.new("by ", {style: new text_style.TextStyle.new({fontSize: 16.0, color: new ui.Color.new(4289309097), fontWeight: ui.FontWeight.w400}), $creationLocationd_0dea112b090073317d4: C[116] || CT.C116}), new text.Text.new(this.productHost, {style: new text_style.TextStyle.new({fontSize: 16.0, color: new ui.Color.new(4280229663), fontWeight: ui.FontWeight.w400}), $creationLocationd_0dea112b090073317d4: C[120] || CT.C120})]), $creationLocationd_0dea112b090073317d4: C[124] || CT.C124})]), $creationLocationd_0dea112b090073317d4: C[127] || CT.C127});
+    }
+  };
+  (FoodDetailsPage.FoodTitleWidget.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let productName = opts && 'productName' in opts ? opts.productName : null;
+    let productPrice = opts && 'productPrice' in opts ? opts.productPrice : null;
+    let productHost = opts && 'productHost' in opts ? opts.productHost : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[productName$] = productName;
+    this[productPrice$] = productPrice;
+    this[productHost$] = productHost;
+    FoodDetailsPage.FoodTitleWidget.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = FoodDetailsPage.FoodTitleWidget.prototype;
+  dart.addTypeTests(FoodDetailsPage.FoodTitleWidget);
+  dart.addTypeCaches(FoodDetailsPage.FoodTitleWidget);
+  dart.setMethodSignature(FoodDetailsPage.FoodTitleWidget, () => ({
+    __proto__: dart.getMethods(FoodDetailsPage.FoodTitleWidget.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(FoodDetailsPage.FoodTitleWidget, I[0]);
+  dart.setFieldSignature(FoodDetailsPage.FoodTitleWidget, () => ({
+    __proto__: dart.getFields(FoodDetailsPage.FoodTitleWidget.__proto__),
+    productName: dart.fieldType(dart.legacy(core.String)),
+    productPrice: dart.fieldType(dart.legacy(core.String)),
+    productHost: dart.fieldType(dart.legacy(core.String))
+  }));
+  FoodDetailsPage.BottomMenu = class BottomMenu extends framework.StatelessWidget {
+    build(context) {
+      return new container.Container.new({width: 1 / 0, child: new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.spaceAround, children: T.JSArrayOfWidgetL().of([new basic.Column.new({children: T.JSArrayOfWidgetL().of([new icon.Icon.new(icons.Icons.timelapse, {color: new ui.Color.new(4282403583), size: 35.0, $creationLocationd_0dea112b090073317d4: C[130] || CT.C130}), new basic.SizedBox.new({height: 15.0, $creationLocationd_0dea112b090073317d4: C[135] || CT.C135}), new text.Text.new("12pm-3pm", {style: new text_style.TextStyle.new({fontSize: 14.0, color: new ui.Color.new(4289309097), fontWeight: ui.FontWeight.w300}), $creationLocationd_0dea112b090073317d4: C[138] || CT.C138})]), $creationLocationd_0dea112b090073317d4: C[142] || CT.C142}), new basic.Column.new({children: T.JSArrayOfWidgetL().of([new icon.Icon.new(icons.Icons.directions, {color: new ui.Color.new(4280534410), size: 35.0, $creationLocationd_0dea112b090073317d4: C[145] || CT.C145}), new basic.SizedBox.new({height: 15.0, $creationLocationd_0dea112b090073317d4: C[150] || CT.C150}), new text.Text.new("3.5 km", {style: new text_style.TextStyle.new({fontSize: 14.0, color: new ui.Color.new(4289309097), fontWeight: ui.FontWeight.w300}), $creationLocationd_0dea112b090073317d4: C[153] || CT.C153})]), $creationLocationd_0dea112b090073317d4: C[157] || CT.C157}), new basic.Column.new({children: T.JSArrayOfWidgetL().of([new icon.Icon.new(icons.Icons.map, {color: new ui.Color.new(4294903380), size: 35.0, $creationLocationd_0dea112b090073317d4: C[160] || CT.C160}), new basic.SizedBox.new({height: 15.0, $creationLocationd_0dea112b090073317d4: C[165] || CT.C165}), new text.Text.new("Map View", {style: new text_style.TextStyle.new({fontSize: 14.0, color: new ui.Color.new(4289309097), fontWeight: ui.FontWeight.w300}), $creationLocationd_0dea112b090073317d4: C[168] || CT.C168})]), $creationLocationd_0dea112b090073317d4: C[172] || CT.C172}), new basic.Column.new({children: T.JSArrayOfWidgetL().of([new icon.Icon.new(icons.Icons.directions_bike, {color: new ui.Color.new(4293482841), size: 35.0, $creationLocationd_0dea112b090073317d4: C[175] || CT.C175}), new basic.SizedBox.new({height: 15.0, $creationLocationd_0dea112b090073317d4: C[180] || CT.C180}), new text.Text.new("Delivery", {style: new text_style.TextStyle.new({fontSize: 14.0, color: new ui.Color.new(4289309097), fontWeight: ui.FontWeight.w300}), $creationLocationd_0dea112b090073317d4: C[183] || CT.C183})]), $creationLocationd_0dea112b090073317d4: C[187] || CT.C187})]), $creationLocationd_0dea112b090073317d4: C[190] || CT.C190}), $creationLocationd_0dea112b090073317d4: C[194] || CT.C194});
+    }
+  };
+  (FoodDetailsPage.BottomMenu.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    FoodDetailsPage.BottomMenu.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = FoodDetailsPage.BottomMenu.prototype;
+  dart.addTypeTests(FoodDetailsPage.BottomMenu);
+  dart.addTypeCaches(FoodDetailsPage.BottomMenu);
+  dart.setMethodSignature(FoodDetailsPage.BottomMenu, () => ({
+    __proto__: dart.getMethods(FoodDetailsPage.BottomMenu.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(FoodDetailsPage.BottomMenu, I[0]);
+  FoodDetailsPage.AddToCartMenu = class AddToCartMenu extends framework.StatelessWidget {
+    build(context) {
+      return new basic.Center.new({child: new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.center, children: T.JSArrayOfWidgetL().of([new icon_button.IconButton.new({onPressed: dart.fn(() => {
+              }, T.VoidToNull()), icon: new icon.Icon.new(icons.Icons.remove, {$creationLocationd_0dea112b090073317d4: C[198] || CT.C198}), color: colors.Colors.black, iconSize: 30.0, $creationLocationd_0dea112b090073317d4: C[201] || CT.C201}), new ink_well.InkWell.new({onTap: dart.fn(() => {
+                navigator.Navigator.push(dart.dynamic, context, new ScaleRoute.ScaleRoute.new({page: new FoodOrderPage.FoodOrderPage.new({$creationLocationd_0dea112b090073317d4: C[207] || CT.C207})}));
+              }, T.VoidToNull()), child: new container.Container.new({width: 200.0, height: 45.0, decoration: new box_decoration.BoxDecoration.new({color: new ui.Color.new(4294781996), border: box_border.Border.all({color: colors.Colors.white, width: 2.0}), borderRadius: new border_radius.BorderRadius.circular(10.0)}), child: new basic.Center.new({child: new text.Text.new("Add To Bag", {style: new text_style.TextStyle.new({fontSize: 18.0, color: colors.Colors.white, fontWeight: ui.FontWeight.w400}), $creationLocationd_0dea112b090073317d4: C[208] || CT.C208}), $creationLocationd_0dea112b090073317d4: C[212] || CT.C212}), $creationLocationd_0dea112b090073317d4: C[215] || CT.C215}), $creationLocationd_0dea112b090073317d4: C[221] || CT.C221}), new icon_button.IconButton.new({onPressed: dart.fn(() => {
+              }, T.VoidToNull()), icon: new icon.Icon.new(icons.Icons.add, {$creationLocationd_0dea112b090073317d4: C[225] || CT.C225}), color: new ui.Color.new(4294781996), iconSize: 30.0, $creationLocationd_0dea112b090073317d4: C[228] || CT.C228})]), $creationLocationd_0dea112b090073317d4: C[234] || CT.C234}), $creationLocationd_0dea112b090073317d4: C[238] || CT.C238});
+    }
+  };
+  (FoodDetailsPage.AddToCartMenu.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    FoodDetailsPage.AddToCartMenu.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = FoodDetailsPage.AddToCartMenu.prototype;
+  dart.addTypeTests(FoodDetailsPage.AddToCartMenu);
+  dart.addTypeCaches(FoodDetailsPage.AddToCartMenu);
+  dart.setMethodSignature(FoodDetailsPage.AddToCartMenu, () => ({
+    __proto__: dart.getMethods(FoodDetailsPage.AddToCartMenu.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(FoodDetailsPage.AddToCartMenu, I[0]);
+  FoodDetailsPage.DetailContentMenu = class DetailContentMenu extends framework.StatelessWidget {
+    build(context) {
+      return new container.Container.new({child: new text.Text.new("Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.", {style: new text_style.TextStyle.new({fontSize: 14.0, color: colors.Colors.black87, fontWeight: ui.FontWeight.w400, height: 1.5}), textAlign: ui.TextAlign.justify, $creationLocationd_0dea112b090073317d4: C[241] || CT.C241}), $creationLocationd_0dea112b090073317d4: C[246] || CT.C246});
+    }
+  };
+  (FoodDetailsPage.DetailContentMenu.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    FoodDetailsPage.DetailContentMenu.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = FoodDetailsPage.DetailContentMenu.prototype;
+  dart.addTypeTests(FoodDetailsPage.DetailContentMenu);
+  dart.addTypeCaches(FoodDetailsPage.DetailContentMenu);
+  dart.setMethodSignature(FoodDetailsPage.DetailContentMenu, () => ({
+    __proto__: dart.getMethods(FoodDetailsPage.DetailContentMenu.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(FoodDetailsPage.DetailContentMenu, I[0]);
+  dart.trackLibraries("packages/flutter_app/pages/FoodDetailsPage.dart", {
+    "package:flutter_app/pages/FoodDetailsPage.dart": FoodDetailsPage
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["FoodDetailsPage.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAOyC;IAAuB;;;;;;EAChE;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,sDACG,UACD,4CACmB,6BAChB,yCACW,iBAAM,wBACZ,cACF,sCACD,kBACE,oCACC,iBAAM,iFAEJ,cAAgB,AAAY,uBAAT,OAAO,0GAEhB,8BACN,yBACf,sCACU,kBACE,qCACC,iBAAM,iFAEJ;AACiD,kBAAhD,uCAAK,OAAO,EAAE,qCAAiB;kKAI7C,sCACgB,uCACZ,aACC,eAEF,yCACgC,8CACnB,yBAChB,sCACqB,oBACA,uCACN,sBACX,AAA0B,AAAmB,4BAAjB,mBAAmB,4EAE1C,uEACsB,wCAAS,mBAE3B,aACQ,+BAAI,iEAUzB,sDACiB,gCACC,uBACD,wEACjB,gCACU,iEAEV,kGACA,gCACU,iEAEV,qDACsB,uBAAW,cACxB,iCACO,iBAAM,6BACF,iBAAM,mCACA,iBAAM,4BACO,4CACvB,0CACa,4BAEnB,yBACJ,wBACQ,2EAER,wBACQ,mMAKd,qCACU,cACD,mCACK,yBACR,oCACgB,8BACP,iKAET,oCACgB,8BACP,yRAKf;IAMZ;;;;;EACF;;;;;;;;;;;;IAGS;;;;;;IACA;;;;;;IACA;;;;;;UAUmB;AACxB,YAAO,iCACa,yBAChB,sCACuC,+CACnB,yBAChB,kBACE,0BACO,wCACO,aACH,iBAAM,yBACU,mFAE7B,kBACE,2BACO,wCACO,aACH,iBAAM,yBACU,kJAIjC,gCACU,kEAEV,6BACoB,yBAChB,kBACE,eACO,wCACO,aACH,iBAAM,yBACU,mFAE7B,kBACE,0BACO,wCACO,aACH,iBAAM,yBACU;IAMvC;;;QApDM;QACW;QACA;QACA;;IAFA;IACA;IACA;AACZ,mEAAW,GAAG;;EAAC;;;;;;;;;;;;;;;UAqDM;AACxB,YAAO,mDAEE,sCACgC,8CACnB,yBAChB,gCACoB,yBAChB,kBACQ,+BACC,iBAAM,mBACP,mEAER,gCACU,mEAEV,kBACE,oBACO,wCACO,aACH,iBAAM,yBACU,kJAIjC,gCACoB,yBAChB,kBACQ,gCACC,iBAAM,mBACP,mEAER,gCACU,mEAEV,kBACE,kBACO,wCACO,aACH,iBAAM,yBACU,kJAIjC,gCACoB,yBAChB,kBACQ,yBACC,iBAAM,mBACP,mEAER,gCACU,mEAEV,kBACE,oBACO,wCACO,aACH,iBAAM,yBACU,kJAIjC,gCACoB,yBAChB,kBACQ,qCACC,iBAAM,mBACP,mEAER,gCACU,mEAEV,kBACE,oBACO,wCACO,aACH,iBAAM,yBACU;IAOzC;;;;;;EACF;;;;;;;;;UAI4B;AACxB,YAAO,8BACE,sCACgC,yCACnB,yBAChB,2CACa;wCACL,kBAAW,yFACH,+BACJ,mEAEZ,iCACS;AACqD,gBAAhD,uCAAK,OAAO,EAAE,qCAAiB;yCAEpC,oCACE,eACC,kBACQ,6CACP,iBAAM,qBACE,8BAAkB,4BAAc,qBACpB,wCAAS,gBAE/B,6BACE,kBACL,sBACW,wCACG,aACI,iCACS,0QAKnC,2CACa;wCACL,kBAAW,sFACV,iBAAM,uBACH;IAKpB;;;;;;EACF;;;;;;;;;UAI4B;AACxB,YAAO,qCACE,kBACL,qTACO,wCACO,aACI,mCACS,4BACf,kBACS;IAG3B;;;;;;EACF","file":"../../../../../../../packages/flutter_app/pages/FoodDetailsPage.dart.lib.js"}');
+  // Exports:
+  return {
+    pages__FoodDetailsPage: FoodDetailsPage
+  };
+}));
+
+//# sourceMappingURL=FoodDetailsPage.dart.lib.js.map
